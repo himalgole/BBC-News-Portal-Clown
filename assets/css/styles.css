@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+#header {
+    background: #fff;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+#header .start {
+    display: flex;
+    align-items: center;
+}
+
+.my-brand h2 {
+    color: #2f2a2a;
+}
+
+#header .search-form {
+    background: #fff;
+    height: 35px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+#header .search-form input {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#header .search-form input:focus {
+    outline: none;
+}
+
+#header .search-form button {
+    height: 35px;
+    width: 40px;
+    background: #fff;
+    border: none;
+}
+
+#header .actions button {
+    height: 35px;
+    width: 80px;
+    background: #141313;
+    border: none;
+    margin-right: 5px;
+    font: 17px bolder;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.my-nav {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+
+.my-nav .menu {
+    display: flex;
+    list-style: none;
+
+}
+
+.my-nav .menu li {
+    position: relative;
+}
+
+.my-nav .menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.my-nav .menu li a:hover {
+    background: #e3e3e3;
+}
+
+.my-nav .menu li a.home::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000000;
+    top: calc(100% + 8px);
+    left: 0;
+
+}
+
+.main .my-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-grid {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.first-grid .card {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    margin-bottom: 10px;
+}
+.first-grid .card img
+{
+    width: 100%;
+}
+
+.my-grid .card h2 {
+    margin-bottom: 10px;
+}
+
+.post-age {
+    margin: 20px 0 5px 0;
+}
+
+.second-grid .card {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    margin-bottom: 10px;
+}
+
+.main-mid {
+    width: calc(100% - 620px);
+    padding: 5px;
+    height: 500px;
+}
+
+.main-mid .card img {
+    width: 100%;
+}
+
+section.more-news {
+    padding: 10px;
+}
+
+section.more-news .sector {
+    height: 2px;
+    background: #000000;
+    margin: 10px 0 10px 0;
+}
+
+section.more-news .my-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+section.more-news .my-container .card {
+    height: 140px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+
+}
+
+section.more-news .my-container .card h3 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section.more-news .my-container .card h3 a:hover {
+    text-decoration: underline;
+}
+
+section.tech-news {
+    padding: 10px;
+    min-width: 100%;
+    min-height: 600px;
+    background: #000000;
+}
+
+section.tech-news .sector {
+    height: 2px;
+    background: #fff;
+    margin: 10px 0 10px 0;
+}
+
+section.tech-news h2 {
+    color: #fff;
+}
+
+footer {
+    padding: 10px;
+    margin-bottom: 20px 0 60px 0;
+}
+
+footer .sector {
+    height: 2px;
+    background: #000;
+    margin: 10px 0 10px 0;
+}
+
+footer nav {
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 10px;
+}
+
+footer nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+footer nav .menu li a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+footer nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+footer .contact {
+    margin: 5px 0 20px 0;
+}
+
+.menu-icon {
+    cursor: pointer;
+    padding: 2px;
+    height: 24px;
+    width: 34px;
+    margin-right: 10px;
+    display: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.search-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    height: 2px;
+    width: 80%;
+    background: #000;
+}
+
+.mobile-panel {
+    position: absolute;
+    display: none;
+    z-index: 99;
+    background: #000;
+    top: 65px;
+    color: #fff;
+    padding: 5px;
+    min-width: 100%;
+
+}
+.mobile-panel .menu li
+{
+    margin-bottom: 5px;
+}
+.mobile-panel .menu li a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.show-mobile-panel {
+    display: block;
+}
+
+@media(max-width:1010px) {
+    .main .my-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .my-grid {
+        width: 100%;
+    }
+
+    .main-mid {
+        width: 100%;
+    }
+    section.more-news .my-container .card {
+        height: 100px;
+    }
+    footer nav .menu
+    {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 810px) {
+    #header .search-form input {
+        width: 250px;
+    }
+}
+
+@media(max-width: 700px) {
+    #header .actions button {
+        display: none;
+    }
+
+    #header .search-form {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .search-icon {
+        display: block;
+    }
+
+    .my-nav {
+        display: none;
+    }
+}
+
+.mobile-panel .m-searchbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+}
+
+.mobile-panel .m-searchbox input {
+    height: 35px;
+    width: calc(100% - 40px);
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.mobile-panel .m-searchbox button {
+    height: 35px;
+    width: 40px;
+    background: #fff;
+    border: none;
+}
+.mobile-panel .actions
+{
+    margin-bottom: 10px;
+}
+.mobile-panel .actions button
+{
+    padding: 5px;
+}

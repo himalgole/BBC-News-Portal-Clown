@@ -1,0 +1,10 @@
+document.querySelector(".menu-icon").addEventListener("click",(e)=>{
+    document.querySelector(".mobile-panel").classList.toggle("show-mobile-panel")
+})
+document.querySelector(".search-icon").addEventListener("click",function(){
+    document.querySelector(".mobile-panel").classList.toggle("show-mobile-panel")
+})
+window.addEventListener("scroll",function()
+{
+    document.querySelector(".mobile-panel").classList.remove("show-mobile-panel")
+})
